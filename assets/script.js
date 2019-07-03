@@ -6,7 +6,8 @@ var gl_rating = "G";
 
 
 //Main Programming
-dynamicadd();
+   dynamicadd();
+
 
 //dynamically add form input elements for the array
 function dynamicadd()

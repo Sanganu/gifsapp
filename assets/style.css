@@ -1,14 +1,13 @@
 body{
-    margin:15px;
-    background-color: #DCDCDC;
-  }
-  .jumbotron {
-    background-color:#A9A9A9;
-    line-height: 20px;
-    color: black;
-    margin:10px;
-    padding: 10px 10px 10px 0;
-  }
+   margin:0;
+    background-color: rgb(231, 220, 220);
+}
+  header{
+    background-color:rgb(158, 26, 26);
+     color: black;
+     height: 1%;
+     width:100%;
+   }
   
   #First-form h4 {
     border-bottom: 1px solid black;
@@ -16,3 +15,35 @@ body{
   .col h4 {
     border-bottom: 1px solid black;
   }
+  
+ #mainapp{
+    width: 100%;
+    margin-left:0;
+    margin-right:0;
+  }
+
+  .section1{
+      background: gold;
+  }
+  .section2{
+      background-color: firebrick;
+  }
+  .section3{
+      background-color: gold;
+  }
+  #First-form{
+      background-color: white;
+      padding:3%;
+      margin: 3%;
+      border: 1px solid black;
+      font-family: 'Titillium Web', sans-serif;
+  }
+
+  #inputtext{
+      background-color: deepskyblue;
+      margin-top:2%;
+      padding:3%;
+  }
+
+
+  
