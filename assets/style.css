@@ -29,19 +29,19 @@
   #First-form{
       background-color: white;
       font-family: 'Titillium Web', sans-serif;
-      margin:5%;
+      margin:6%;
       padding:2%;
   }
 
   #inputtext{
       background-color: deepskyblue;
-      margin:5%;
+      margin:6%;
       padding:5%;
   }
 
 .gifsection{
     background-color: coral;
-    overflow: scroll;
+    padding:8%;
 }
 .ratingsection{
    background-color: rgb(113, 113, 209);
@@ -55,7 +55,15 @@
     padding:5%;
     margin:5%;
 }
-#Second-form{
-
+.appheader{
+    animation: slide 10s infinite;
+    color: gold;
 }
-  
+.header{
+    padding-top:2%;
+    padding-bottom:2%;
+}
+@keyframes slide{
+    from { margin-left:0;}
+    to { margin-left: 73%;}
+}
