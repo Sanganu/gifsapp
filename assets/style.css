@@ -57,7 +57,7 @@
 }
 .appheader{
     animation: slide 10s infinite;
-    color: gold;
+    color: rgb(236, 203, 11);
 }
 .header{
     padding-top:2%;
