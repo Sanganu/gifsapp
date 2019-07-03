@@ -7,8 +7,7 @@ var gl_rating = "G";
 
 //Main Programming
    dynamicadd();
-
-
+ 
 //dynamically add form input elements for the array
 function dynamicadd()
 {
@@ -54,6 +53,7 @@ $("#rating").on("change",function(){
 // adding the search string
 $("#First-form").on("click","input",function()
 {
+    $("#initialgif").hide();
     //var removestr =[] ;
     //console.log('deletestr before if checking is :'+removestr); //this does not get printed
        var yesno = this.checked ;
@@ -63,7 +63,7 @@ $("#First-form").on("click","input",function()
            console.log("yesno in if part:",yesno);
            gl_searchfor = this.value ;
            console.log('search str',gl_searchfor);
-           callapigifvid(gl_searchfor);
+            callapigifvid(gl_searchfor);
      }
      else {
           var removestr = this.value ;

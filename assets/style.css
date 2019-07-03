@@ -1,12 +1,8 @@
-body{
-   margin:0;
-    background-color: rgb(231, 220, 220);
-}
-  header{
+
+  .header{
     background-color:rgb(158, 26, 26);
      color: black;
-     height: 1%;
-     width:100%;
+    
    }
   
   #First-form h4 {
@@ -18,39 +14,48 @@ body{
   
 
 .halfpart{
-    font-family: 'Nunito', sans-serif;
-       
+    text-align: center;
+   
 }
   .section1{
       background: gold;
   }
   .section2{
-      background-color: firebrick;
+      background-color: yellowgreen;
   }
   .section3{
       background-color: gold;
   }
   #First-form{
       background-color: white;
-      padding:3%;
-      margin: 3%;
-      border: 1px solid black;
       font-family: 'Titillium Web', sans-serif;
+      margin:5%;
+      padding:2%;
   }
 
   #inputtext{
       background-color: deepskyblue;
-      margin-top:2%;
-      padding:3%;
+      margin:5%;
+      padding:5%;
   }
 
 .gifsection{
     background-color: coral;
+    overflow: scroll;
 }
 .ratingsection{
-   background-color: darkcyan;
+   background-color: rgb(113, 113, 209);
+   font-family: 'Nunito', sans-serif;
+   padding:5%;
+   margin:5%;
 }
 .numberofgifs{
     background-color: cornflowerblue;
+    font-family: 'Nunito', sans-serif;
+    padding:5%;
+    margin:5%;
+}
+#Second-form{
+
 }
   

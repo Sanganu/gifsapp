@@ -9,23 +9,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <link href="./assets/style.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Nunito|Titillium+Web&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-    <header>
-        <h1>GIPHY Safe Search</h1>
-        <h6>Using GIPHY API</h6>
-
-    </header>
-    <div class="container" id="mainapp">
+     
+    <div class="container">
+        <div class ="row">
+                <div class="col col-lg-12 header">
+                        <h1>GIPHY Safe Search</h1>
+                        <h6>Using GIPHY API</h6>
+                
+                    </div>
+        </div>
         <div class="row">
                 <div class="col col-lg-4 section1">
                         <form id="First-form">
                             
-                            <p>Select..</p>
+                            <h4>Select...</h4>
                            
                         </form>
                
@@ -41,28 +43,29 @@
                      <div class="row">
                             <div class="col col-lg-6 section2">
                                   <div class="ratingsection">
-                                        <h6>Select the Rating</h6>
-                                        <br />
+                                        <label>Select the Rating</label>
+                                       
                                         <select id="rating">
                                             <option value="G" selected>G rating</option>
                                             <option value="Y">Y rating</option>
                                         </select>
+                                        <label id="unselect">Unselect to make the gifs disappear</label>
                                   </div>
                                
                               </div>      
                              <div class ="col col-lg-6 section3">   
                                  <div class="numberofgifs">
-                                        <h4>Select the number of Gifs you want</h4>
-                                        <br />
+                                        <label>Select the number of Gifs</label>
+                                      
                                         <form id="Second-form">
                                             <input name="count" id="10rows" type="radio" value="10">10 GIFs
-                                            <br/>
+                                            
                                             <input name="count" id="5rows" type="radio" value="5">5 GIFs
-                                            <br />
+                                        
                                             <input name="count" id="3rows" type="radio" value="3" checked="checked">3 GIFs
-                                            <br />
+                                         
                                             <input name="count" id="1rows" type="radio" value="1">1 GIF
-                                            <br />
+                                      
                                         </form>
                                  </div>
                              </div>
@@ -70,18 +73,13 @@
                      <div class="row">
                          <div class="col col-lg-12 gifsection">
                                 <div class="container" id="vfiles">
-                                    <img src="https://media.giphy.com/media/xTiTnJ0uuZEwVlYQog/giphy.gif"/>
+                                    <img id="initialgif" src="https://media.giphy.com/media/xTiTnJ0uuZEwVlYQog/giphy.gif"/>
                                 </div>
                          </div>
                      </div>
                  </div>
-                
-                 
-                    
-                
-        </div>
-        
-      </div>
+          </div>
+    </div>
     <script type="text/javascript" src="./assets/script.js"></script>
 </body>
 
