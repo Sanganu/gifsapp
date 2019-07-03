@@ -4,6 +4,10 @@ var gl_rows = 1;
 var gl_searchfor = [];
 var gl_rating = "G";
 
+
+//Main Programming
+dynamicadd();
+
 //dynamically add form elements
 function dynamicadd()
 {
@@ -15,7 +19,7 @@ function dynamicadd()
           type = "checkbox"
           value = "${gl_items[i]}" > ${gl_items[i]}<br />`);
           $("#First-form").append(additem);
-          //console.log("value is",additem.attr(value));
+          console.log("value is");
         }
 
 }
@@ -128,10 +132,6 @@ $("#Second-form").on("click","input",function(event){
           //event.preventDefault();
           gl_rows = this.value ;
 });
-
-
-//Main Programming
-dynamicadd();
 
 
 //Not used
