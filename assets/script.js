@@ -1,6 +1,6 @@
 //global Variables
 var gl_items = ['Ganapati','Fire works','Stars','Programming','Peacocks','Flamingo','Flowers','Butterfly'];
-var gl_rows = 1;
+var gl_rows = 3;
 var gl_searchfor = [];
 var gl_rating = "G";
 
@@ -8,12 +8,11 @@ var gl_rating = "G";
 //Main Programming
 dynamicadd();
 
-//dynamically add form elements
+//dynamically add form input elements for the array
 function dynamicadd()
 {
         for ( var i =0; i < gl_items.length ; i++)
         {
-
           var  additem = (`<input id = "${i}option"
           class = "optionvalue" name ="name${i}"
           type = "checkbox"
@@ -21,9 +20,8 @@ function dynamicadd()
           $("#First-form").append(additem);
           console.log("value is");
         }
-
 }
-
+//Add Search text to the form elements
 $("#getit").on("click",function(event){
            event.preventDefault() ;
            var inputtext = $("#search").val().trim();
@@ -34,10 +32,11 @@ $("#getit").on("click",function(event){
            class = "optionvalue" name ="name${l}"
            type = "checkbox"
            value = "${gl_items[l]}" > ${gl_items[l]}<br />`);
-           //divele.append(string);
-             $("#First-form").append(additem);
-             $("#search").val("") ;
+           $("#First-form").append(additem);
+           $("#search").val("") ;
 });
+
+//Clear all selections
 $("#reset").on("click",function(){
         for ( var i =0 ; i< gl_items.length; i++)
         {
@@ -45,47 +44,11 @@ $("#reset").on("click",function(){
         }
         $("#vfiles").html(' ');
 });
+
+//Capture Rating value to global variable
 $("#rating").on("change",function(){
        gl_rating = this.value;
 });
-function callapigifvid(searchstr)
-{
-      //Api call
-          var querstr1 = "https://api.giphy.com/v1/gifs/search?api_key=01f8ebd24dd04b98b407dd4b30d3443e" ;
-          var noofgifs = gl_rows;
-          var var_rating = gl_rating;
-            var querstr2 = "&q="+ searchstr +"&limit="+noofgifs+"&offset=0&rating="+gl_rating+"&lang=en";
-            var queryURL = querstr1 + querstr2 ;
-            console.log(querstr1+querstr2);
-            var category = searchstr;
-            $.ajax({
-              url : queryURL ,
-              method: "GET"
-            }).done(function(response){
-              console.log(response);
-              var img_array = response.data;
-              var len = img_array.length;
-
-              console.log('length',len);
-              console.log('res data',response.data);
-              for( var i =0; i < len ; i++)
-              {
-                var in1 = img_array[i].images.fixed_height.url ;
-                var in2 = img_array[i].images.fixed_height_still.url ;
-                var ifrele = $("<img>");
-              //  ifrele.addClass(".videos");
-                ifrele.addClass(`${searchstr}`);
-                ifrele.attr("video-file",in1);
-                ifrele.attr("image-file",in2);
-                ifrele.attr("status","movie");
-                ifrele.attr("src",in1);
-                ifrele.attr("category",category);
-                $("#vfiles").prepend(ifrele);
-              } //end of for
-            }).error(function(errmsg){
-              console.log('Encountered Error: ',errmsg);
-            });//end of ajax response
-}
 
 // adding the search string
 $("#First-form").on("click","input",function()
@@ -109,6 +72,45 @@ $("#First-form").on("click","input",function()
      }
 
 });
+
+function callapigifvid(searchstr)
+{
+      //Api call
+          var querstr1 = "https://api.giphy.com/v1/gifs/search?api_key=01f8ebd24dd04b98b407dd4b30d3443e" ;
+          var noofgifs = gl_rows;
+          var var_rating = gl_rating;
+            var querstr2 = "&q="+ searchstr +"&limit="+noofgifs+"&offset=0&rating="+gl_rating+"&lang=en";
+            var queryURL = querstr1 + querstr2 ;
+            console.log(querstr1+querstr2);
+            var category = searchstr;
+            $.ajax({
+              url : queryURL ,
+              method: "GET"
+            }).then(function(response){
+              console.log(response);
+              var img_array = response.data;
+              var len = img_array.length;
+
+              console.log('length',len);
+              console.log('res data',response.data);
+              for( var i =0; i < len ; i++)
+              {
+                var in1 = img_array[i].images.fixed_height.url ;
+                var in2 = img_array[i].images.fixed_height_still.url ;
+                var ifrele = $("<img>");
+              //  ifrele.addClass(".videos");
+                ifrele.addClass(`${searchstr}`);
+                ifrele.attr("video-file",in1);
+                ifrele.attr("image-file",in2);
+                ifrele.attr("status","movie");
+                ifrele.attr("src",in1);
+                ifrele.attr("category",category);
+                $("#vfiles").prepend(ifrele);
+              } //end of for
+            }).catch(function(errmsg){
+              console.log('Encountered Error: ',errmsg);
+            });//end of ajax response
+}
 
 $("#vfiles").on("click","img",function(event)
 {
