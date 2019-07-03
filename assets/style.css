@@ -1,0 +1,18 @@
+body{
+    margin:15px;
+    background-color: #DCDCDC;
+  }
+  .jumbotron {
+    background-color:#A9A9A9;
+    line-height: 20px;
+    color: black;
+    margin:10px;
+    padding: 10px 10px 10px 0;
+  }
+  
+  #First-form h4 {
+    border-bottom: 1px solid black;
+  }
+  .col h4 {
+    border-bottom: 1px solid black;
+  }

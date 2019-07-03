@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GIPHY Search</title>
+    <link href="./assets/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class = "jumbotron">
+        <h1>Using GIPHY API</h1>
+        <img src= "PoweredBy_200px-White_HorizText.png" alt = "Powered By GIPHY">
+    </div>
+    <div class = "container">
+         <h4>This Webpage displays Gif files (powered GIPHY)</h4>
+         <p>You can display Gifs by your preference!!!</p>
+         <h6>Add Keywords to the list</h6>
+         <h6>(or) Just select from the default list<h6>
+    </div>
+    <div class = "container">
+        <form id = "inputtext">
+             <div class = "form-group">
+                  <label for = "Search">Enter Search Words you want to add the list</label>
+                  <input type ="searchtxt" id = "search" class = "form-control"><br />
+                  <button class = "btn btn-info btn-block" id ="getit">Submit</button>
+             </div>
+        </form>
+        <br />
+        <div class = "row">
+    
+             <div class = "col col-lg-4">
+                     <h4>Select the number of Gifs you want</h4>
+                     <br />
+                    <form id = "Second-form">
+                        <input name = "count" id = "10rows" type = "radio" value ="10">10 GIFs<br/>
+                        <input name = "count" id = "5rows" type = "radio" value = "5">5 GIFs<br />
+                        <input name = "count" id = "3rows" type = "radio" value = "3">3 GIFs<br />
+                        <input name = "count" id = "1rows" type = "radio" value = "1" selected>1 GIF<br />
+                    </form>
+             </div>
+             <div class = "col col-lg-4">
+                  <h4>Select the Rating</h4>
+                  <br />
+                   <select id = "rating">
+                      <option value="G" selected>G rating</option>
+                   <!--   <option value = "PG">PG rating</option>
+                      <option value = "PG-13">PG-13 rating</option> -->
+                      <option value = "Y">Y rating</option>
+                   </select>
+             </div>
+             <div class = "col col-lg-4">
+                  <form id = "First-form">
+                     <h4>Check the Options you want to see GIF videos</h4>
+                  </form>
+             </div>
+        </div>
+        <br />
+        <button id = "reset" class = "btn btn-info btn-block">Reset</button>
+        <br />
+    
+    
+    </div>
+    <br /><br />
+    <div class = "container" id = "vfiles"></div>
+    <div class = "container" id = "vidfiles"></div>
+    <script type = "text/javascript" src = "assignmentgifremovejs.js"></script>
+</body>
+</html>
