@@ -16,12 +16,11 @@ body{
     border-bottom: 1px solid black;
   }
   
- #mainapp{
-    width: 100%;
-    margin-left:0;
-    margin-right:0;
-  }
 
+.halfpart{
+    font-family: 'Nunito', sans-serif;
+       
+}
   .section1{
       background: gold;
   }
@@ -45,5 +44,13 @@ body{
       padding:3%;
   }
 
-
+.gifsection{
+    background-color: coral;
+}
+.ratingsection{
+   background-color: darkcyan;
+}
+.numberofgifs{
+    background-color: cornflowerblue;
+}
   

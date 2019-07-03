@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <link href="./assets/style.css" rel="stylesheet" type="text/css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
                
                         <form id="inputtext">
                                 <div class="form-group">
-                                    <label for="Search">Add Search terms to the options above</label>
+                                    <label for="Search">Add Search term to the options above</label>
                                     <input type="searchtxt" id="search" class="form-control">
                                     <button class="btn btn-info btn-block" id="getit">Add Search term</button>
                                 </div>
@@ -40,32 +40,37 @@
                  <div class="col col-lg-8 halfpart">
                      <div class="row">
                             <div class="col col-lg-6 section2">
-                                    <h4>Select the Rating</h4>
-                                    <br />
-                                    <select id="rating">
-                                        <option value="G" selected>G rating</option>
-                                        <option value="Y">Y rating</option>
-                                    </select>
+                                  <div class="ratingsection">
+                                        <h6>Select the Rating</h6>
+                                        <br />
+                                        <select id="rating">
+                                            <option value="G" selected>G rating</option>
+                                            <option value="Y">Y rating</option>
+                                        </select>
+                                  </div>
+                               
                               </div>      
                              <div class ="col col-lg-6 section3">   
-                                    <h4>Select the number of Gifs you want</h4>
-                                    <br />
-                                    <form id="Second-form">
-                                        <input name="count" id="10rows" type="radio" value="10">10 GIFs
-                                        <br/>
-                                        <input name="count" id="5rows" type="radio" value="5">5 GIFs
+                                 <div class="numberofgifs">
+                                        <h4>Select the number of Gifs you want</h4>
                                         <br />
-                                        <input name="count" id="3rows" type="radio" value="3" checked="checked">3 GIFs
-                                        <br />
-                                        <input name="count" id="1rows" type="radio" value="1">1 GIF
-                                        <br />
-                                    </form>
-                                </div>
+                                        <form id="Second-form">
+                                            <input name="count" id="10rows" type="radio" value="10">10 GIFs
+                                            <br/>
+                                            <input name="count" id="5rows" type="radio" value="5">5 GIFs
+                                            <br />
+                                            <input name="count" id="3rows" type="radio" value="3" checked="checked">3 GIFs
+                                            <br />
+                                            <input name="count" id="1rows" type="radio" value="1">1 GIF
+                                            <br />
+                                        </form>
+                                 </div>
+                             </div>
                      </div>
                      <div class="row">
                          <div class="col col-lg-12 gifsection">
                                 <div class="container" id="vfiles">
-                                    <img src=""/>
+                                    <img src="https://media.giphy.com/media/xTiTnJ0uuZEwVlYQog/giphy.gif"/>
                                 </div>
                          </div>
                      </div>
