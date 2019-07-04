@@ -67,3 +67,9 @@
     from { margin-left:0;}
     to { margin-left: 73%;}
 }
+.footer{
+    text-align: center;
+    background-color: rgb(158, 26, 26);
+    width:100%;
+    color: rgb(236, 203, 11);
+}
