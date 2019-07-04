@@ -1,5 +1,7 @@
 # gifsapp
 
+Developed By: Sangeetha Kaliaperumal
+
 This App features
 1. Giphy API.
 2. JQuery DOM Manipulation.
