@@ -15,10 +15,13 @@ USER:
 2. Add New search term to the option and selecting the term for gifs
 3. Default Rating - 'G', Number of Gifs :'3'
 
-Development details:
-1. This app was developed by me during my Bootcamp program at DU (2017-2018)
-2. The Original files are:
-   https://skprose.github.io/MyPortfolio/Javascript_Games/GameswithTimer/AssignmentonGif.html
-   https://github.com/Skprose/MyPortfolio/blob/master/Javascript_Games/GameswithTimer/AssignmentonGif.html
-3. The functionality is maintained the same in this repo.
-4. CSS is changed.
+
+SCREENSHOTS
+![screenshot1]("./assets/screenshot1.png")
+
+![screenshot2]("./assets/screenshot2.png")
+
+### DeveloperBy:
+##### Sangeetha K.
+Senior Tutor & Grader
+Trilogy Education
