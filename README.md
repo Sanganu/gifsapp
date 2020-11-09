@@ -1,6 +1,6 @@
 # gifsapp
-
-Developed By: Sangeetha Kaliaperumal
+### Deployment: ![Live](https://sanganu.github.io/gifsapp/)
+###### LICENSE: ![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`
 
 This App features
 1. Giphy API.
@@ -17,11 +17,15 @@ USER:
 
 
 SCREENSHOTS
-![screenshot1]("./assets/screenshot1.png")
+![screenshot1](https://github.com/Sanganu/gifsapp/blob/master/assets/screenshot1.PNG)
 
-![screenshot2]("./assets/screenshot2.png")
+![screenshot2](https://github.com/Sanganu/gifsapp/blob/master/assets/screenshot2.PNG)
 
 ### DeveloperBy:
+
 ##### Sangeetha K.
-Senior Tutor & Grader
-Trilogy Education
+Senior Tutor & Grader.
+
+Trilogy Education.
+
+
