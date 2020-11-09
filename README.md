@@ -1,6 +1,6 @@
 # gifsapp
-### Deployment: ![Live](https://sanganu.github.io/gifsapp/)
-###### LICENSE: ![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`
+### Deployment: [Live](https://sanganu.github.io/gifsapp/)
+###### LICENSE: ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)`
 
 This App features
 1. Giphy API.
